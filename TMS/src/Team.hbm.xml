@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="bean.Team" table="team">
+    
+      <id name="teamId" type="int" column="TEAM_ID">
+         <generator class="assigned"/>
+      </id>
+      <property name="prjId" column="PRJ_ID" type="int"/>
+      <property name="teamName" column="TEAM_NAME" type="string"/>
+      <property name="teamLeader" column="TEAM_LEADER" type="string"/>
+      <property name="teamNotes" column="TEAM_NOTES" type="string"/>
+      <property name="teamMembers" column="TEAM_MEMBERS" type="string"/>
+      
+      
+   </class>
+</hibernate-mapping>

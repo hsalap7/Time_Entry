@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="bean.Employee" table="employee">
+    
+      <id name="id" type="int" column="EMP_ID">
+         <generator class="assigned"/>
+      </id>
+      <property name="name" column="EMP_NAME" type="string"/>
+      <property name="desigId" column="EMP_DESIGNATION_ID" type="string"/>
+      <property name="joinDate" column="EMP_JOIN_DATE" type="java.util.Date"/>
+      <property name="skills" column="EMP_SKILLS" type="string"/>
+      <property name="deptId" column="EMP_DEPARTMENT_ID" type="string"/>
+      <property name="notes" column="EMP_NOTES" type="string"/>
+     <property name="email" column="EMP_EMAIL" type="string"/>
+     <property name="phone" column="EMP_PHONE" type="string"/>
+     <property name="username" column="EMP_USERNAME" type="string"/>
+     <property name="password" column="EMP_PASSWORD" type="string"/>
+   </class>
+</hibernate-mapping>

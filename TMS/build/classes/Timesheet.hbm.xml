@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="bean.Timesheet" table="timesheet">
+    
+      <id name="timesheetId" type="int" column="TIMESHEET_ID">
+         <generator class="assigned"/>
+      </id>
+      <property name="prjId" column="PRJ_ID" type="int"/>
+      <property name="empId" column="EMP_ID" type="int"/>
+      <property name="activity" column="TIMESHEET_ACTIVITY" type="string"/>
+      <property name="date" column="TIMESHEET_DATE" type="java.util.Date"/>
+      <property name="hours" column="TIMESHEET_NO_OF_HRS" type="string"/>
+      <property name="approved" column="TIMESHEET_APPROVED" type="string"/>
+      <property name="approvedBy" column="TIMESHEET_APPROVED_BY" type="string"/>
+      <property name="rejectionReason" column="TIMESHEET_REJECTED_REASONS" type="string"/>
+     <property name="notes" column="TIMESHEET_NOTES" type="string"/>
+     <property name="feedback" column="TIMESHEET_FEEDBACK" type="string"/>
+     <property name="suggestions" column="TIMESHEET_SUGGESTIONS" type="string"/>
+     <property name="otherActivities" column="TIMESHEET_OTHER_ACTIVITY" type="string"/>
+   </class>
+</hibernate-mapping>

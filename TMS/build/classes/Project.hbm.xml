@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+
+<class name="bean.Project" table="project"> 
+    
+ <id name="prjId" type="int" column="PRJ_ID">
+ <generator class="assigned"/>
+ </id>
+ 
+   
+<property name="prjName"  column="PRJ_NAME" type="string" /> 
+<property name="prjClientName"  column="PRJ_CLIENT_NAME" type="string"/> 
+<property name="prjClientBrief"  column="PRJ_CLIENT_BRIEF" type="string" /> 
+<property name="prjClientManager"  column="PRJ_CLIENT_MANAGER" type="string"/> 
+<property name="prjClientEmail"  column="PRJ_CLIENT_EMAILID " type="string"/> 
+<property name="prjOsId"  column="PRJ_OS_ID" type="string"/> 
+<property name="prjDbId"  column="PRJ_DB_ID" type="string"/> 
+<property name="prjAppServerId"  column="PRJ_APP_SERVER_ID" type="string"/> 
+<property name="prjPmName"  column="PRJ_PM_NAME" type="string"/> 
+<property name="prjPl"  column="PRJ_PL" type="string"/> 
+<property name="prjNotes"  column="PRJ_NOTES " type="string"/> 
+<property name="prjStartDate"  column="PRJ_START_DATE" type="java.util.Date"/> 
+<property name="prjEndDate"  column="PRJ_END_DATE" type="java.util.Date"/> 
+<property name="status"  column="STATUS" type="string"/> 
+
+ 
+
+
+
+
+
+
+</class> 
+
+
+</hibernate-mapping>
